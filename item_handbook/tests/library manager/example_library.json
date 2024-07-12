@@ -1,0 +1,26 @@
+{
+    "metadata": {},
+    "storage": {
+        "type": "folder",
+        "name": "root",
+        "container": [
+            {
+                "type": "folder",
+                "name": "folder1",
+                "container": []
+            },
+            {
+                "type": "folder",
+                "name": "folder2",
+                "container": [
+                    {
+                        "type": "item",
+                        "uid": "item_ab970916-fdb3-40c0-8013-b1f9e9aa89ab",
+                        "data": {}
+                    }
+                ]
+            }
+        ]
+    },
+    "preferences": {}
+}

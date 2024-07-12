@@ -1,0 +1,62 @@
+// Class Library //:
+    var metadata
+    var storage
+    var preferences
+
+    [] def load -> it must load library file
+    [] def save -> saves library file
+    [] def move_by_path -> uses path(string) to locate Category or Item class instance,
+        and move it
+    [] def delete -> uses path(string) to locate Category or Item class instance and call delete
+        function
+    [] def add -> 
+    [] def get_py_path ->
+    [] def print_structure ->
+
+// Class Category //:
+    var name
+    var uid
+    var path
+    var container
+    var parent
+
+    [] def _initialize_container ->
+    [x] def to_dict ->
+    [] def get_by_path ->
+    [] def add_item ->
+    [] def remove_item ->
+    [] def delete ->
+
+// Class Item //:
+    var data
+    var uid
+    var path
+    var parent
+
+    [x] def to_dict ->
+    [x] def delete ->
+
+|| An example of a library file
+    {
+        "metadata": {},
+        "storage": {
+            "type": "folder",
+            "name": "root",
+            "container": [
+                {
+                    "type": "folder",
+                    "name": "folder1",
+                    "container": [
+                        {
+                            "type": "item",
+                            "uid": "item_ab970916-fdb3-40c0-8013-b1f9e9aa89ab",
+                            "data": {
+            
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "preferences": {}
+    }
